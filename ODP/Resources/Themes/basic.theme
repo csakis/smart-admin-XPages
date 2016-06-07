@@ -2,12 +2,16 @@
   <resources>
     <styleSheet href="sa/css/bootstrap.css" />
     <styleSheet href="sa/css/font-awesome.min.css" />
+    <styleSheet href="sa/css/smartadmin-production-plugins.min.css" />
     <styleSheet href="sa/css/smartadmin-production.css" />
+    
     <styleSheet href="sa/css/smartadmin-skins.css" />
     <styleSheet href="sa/css/demo.min.css" />
     <styleSheet href="sa/css/open-sans.css" />
     <styleSheet href="sa/css/colors.min.css" />
     <styleSheet href="sa/css/gutter.css" />
+    <styleSheet href="sa/css/toastr.min.css" />
+    <styleSheet href="app.css" />
     
     <script src="sa/js/libs/jquery-2.1.1.min.js" clientSide="true"></script>
     <script src="sa/js/x$.js" clientSide="true"></script>

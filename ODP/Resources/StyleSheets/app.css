@@ -1,0 +1,13 @@
+div .sa-activity, span a, .minifyme, .sa-demo-setting,.jarviswidget-ctrls a{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+#header {
+	padding-right: 35px;
+	}
+.demo {
+  top: 10px;
+  z-index: 905;
+}

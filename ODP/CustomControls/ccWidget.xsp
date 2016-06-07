@@ -1,16 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core">
-  <xp:div id="widget" styleClass="jarviswidget">
+  <xp:div id="widget">
+    <xp:this.attrs>
+      <xp:attr name="data-widget-sortable" value=" " minimized="true">
+        <xp:this.loaded><![CDATA[${javascript:return (compositeData.sortable == "false");}]]></xp:this.loaded>
+      </xp:attr>
+      <xp:attr name="data-widget-collapsed" value=" " minimized="true">
+        <xp:this.loaded><![CDATA[${javascript:return (compositeData.collapsed == "false");}]]></xp:this.loaded>
+      </xp:attr>
+      <xp:attr name="data-widget-editbutton" value=" " minimized="true">
+        <xp:this.loaded><![CDATA[${javascript:return (compositeData.editbutton == "false");}]]></xp:this.loaded>
+      </xp:attr>
+      <xp:attr name="data-widget-colorbutton" value=" " minimized="true">
+        <xp:this.loaded><![CDATA[${javascript:return (compositeData.colorbutton == "false");}]]></xp:this.loaded>
+      </xp:attr>
+      <xp:attr name="data-widget-togglebutton" value=" " minimized="true">
+        <xp:this.loaded><![CDATA[${javascript:return (compositeData.togglebutton == "false");}]]></xp:this.loaded>
+      </xp:attr>
+      <xp:attr name="data-widget-deletebutton" value=" " minimized="true">
+        <xp:this.loaded><![CDATA[${javascript:return (compositeData.deletebutton == "false");}]]></xp:this.loaded>
+      </xp:attr>
+      <xp:attr name="data-widget-fullscreenbutton" value=" " minimized="true">
+        <xp:this.loaded><![CDATA[${javascript:return (compositeData.fullscreenbutton == "false");}]]></xp:this.loaded>
+      </xp:attr>
+      <xp:attr name="data-widget-refreshbutton" value=" " minimized="true">
+        <xp:this.loaded><![CDATA[${javascript:return (compositeData.refreshbutton == "false");}]]></xp:this.loaded>
+      </xp:attr>
+    </xp:this.attrs>
+    <xp:this.styleClass><![CDATA[#{javascript:var styleClass = "jarviswidget ";
+
+switch (compositeData.color) {
+	case "Grass Green":	styleClass += "jarviswidget-color-green";
+	break;
+	
+	case "Dark Green":	styleClass += "jarviswidget-color-greenDark";
+	break;
+	
+	case "Light Green":	styleClass += "jarviswidget-color-greenLight";
+	break;
+	
+	case "Purple":	styleClass += "jarviswidget-color-purple";
+	break;
+	
+	case "Magenta":	styleClass += "jarviswidget-color-magenta";
+	break;
+	
+	case "Pink":	styleClass += "jarviswidget-color-pink";
+	break;
+	
+	case "Fade Pink":	styleClass += "jarviswidget-color-pinkDark";
+	break;
+	
+	case "Light Blue ":	styleClass += "jarviswidget-color-blueLight";
+	break;
+	
+	case "Teal":	styleClass += "jarviswidget-color-teal";
+	break;
+	
+	case "Ocean Blue":	styleClass += "jarviswidget-color-blue";
+	break;
+	
+	case "Night Sky":	styleClass += "jarviswidget-color-blueDark";
+	break;
+	
+	case "Night":	styleClass += "jarviswidget-color-darken";
+	break;
+	
+	case "Day Light":	styleClass += "jarviswidget-color-yellow";
+	break;
+	
+	case "Orange":	styleClass += "jarviswidget-color-orange";
+	break;
+	
+	case "Dark orange":	styleClass += "jarviswidget-color-orangeDark";
+	break;
+	
+	case "Red Rose":	styleClass += "jarviswidget-color-red";
+	break;
+	
+	case "Light red":	styleClass += "jarviswidget-color-redLight";
+	break;
+	
+	case "Purity":	styleClass += "jarviswidget-color-white";
+	break;
+	
+	default: styleClass += "jarviswidget-color-blueDark";
+	}
+	
+	return styleClass;
+	}]]></xp:this.styleClass>
     <xp:panel tagName="header">
-    My first widget
-      <xp:panel tagName="h2"> <!-- widget title -->
-      </xp:panel><!-- /widget title -->
-    </xp:panel> <!-- /header -->
+      <xp:label value="#{javascript:return compositeData.title;}" styleClass="h2"></xp:label>
+    </xp:panel><!-- /header -->
     <xp:div>
-      <xp:div styleClass="jarviswidget-editbox">
-      <xp:inputText styleClass="form-control"></xp:inputText>
-      </xp:div><!-- edit box -->
-      <xp:div styleClass="widget-body"></xp:div><!-- widget content -->
+      <xp:div styleClass="widget-body">
+        <xp:callback></xp:callback>
+      </xp:div><!-- widget content -->
     </xp:div>
-  </xp:div> <!-- /widget -->
+  </xp:div><!-- /widget -->
+  
 </xp:view>

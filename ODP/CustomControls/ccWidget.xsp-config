@@ -13,5 +13,155 @@
         <in-palette>true</in-palette>
       </designer-extension>
     </composite-extension>
+    <property>
+      <property-name>title</property-name>
+      <property-class>string</property-class>
+      <display-name>Title</display-name>
+    </property>
+    <property>
+      <property-name>editbutton</property-name>
+      <property-class>string</property-class>
+      <property-extension>
+        <designer-extension>
+          <editor>com.ibm.workplace.designer.property.editors.comboParameterEditor</editor>
+          <default-value>false</default-value>
+          <editor-parameter>true&#xd;
+false</editor-parameter>
+        </designer-extension>
+      </property-extension>
+      <display-name>Edit Button</display-name>
+    </property>
+    <property>
+      <property-name>colorbutton</property-name>
+      <property-class>string</property-class>
+      <display-name>Color Button</display-name>
+      <property-extension>
+        <designer-extension>
+          <editor>com.ibm.workplace.designer.property.editors.comboParameterEditor</editor>
+          <default-value>false</default-value>
+          <editor-parameter>true&#xd;
+false</editor-parameter>
+        </designer-extension>
+      </property-extension>
+    </property>
+    <property>
+      <property-name>togglebutton</property-name>
+      <property-class>string</property-class>
+      <property-extension>
+        <designer-extension>
+          <editor>com.ibm.workplace.designer.property.editors.comboParameterEditor</editor>
+          <default-value>false</default-value>
+          <editor-parameter>true&#xd;
+false</editor-parameter>
+        </designer-extension>
+      </property-extension>
+      <display-name>Toggle Button</display-name>
+    </property>
+    <property>
+      <property-name>deletebutton</property-name>
+      <property-class>string</property-class>
+      <display-name>Delete Button</display-name>
+      <property-extension>
+        <designer-extension>
+          <editor>com.ibm.workplace.designer.property.editors.comboParameterEditor</editor>
+          <editor-parameter>true&#xd;
+false</editor-parameter>
+          <default-value>false</default-value>
+        </designer-extension>
+      </property-extension>
+    </property>
+    <property>
+      <property-name>fullscreenbutton</property-name>
+      <property-class>string</property-class>
+      <display-name>Full Screen Button</display-name>
+      <property-extension>
+        <designer-extension>
+          <editor>com.ibm.workplace.designer.property.editors.comboParameterEditor</editor>
+          <default-value>false</default-value>
+          <editor-parameter>true&#xd;
+false</editor-parameter>
+        </designer-extension>
+      </property-extension>
+    </property>
+    <property>
+      <property-name>custombutton</property-name>
+      <property-class>string</property-class>
+      <display-name>Custom button</display-name>
+      <property-extension>
+        <designer-extension>
+          <editor>com.ibm.workplace.designer.property.editors.comboParameterEditor</editor>
+          <default-value>false</default-value>
+          <editor-parameter>true&#xd;
+false</editor-parameter>
+        </designer-extension>
+      </property-extension>
+    </property>
+    <property>
+      <property-name>collapsed</property-name>
+      <property-class>string</property-class>
+      <display-name>Collapsed</display-name>
+      <property-extension>
+        <designer-extension>
+          <editor>com.ibm.workplace.designer.property.editors.comboParameterEditor</editor>
+          <default-value>false</default-value>
+          <editor-parameter>true&#xd;
+false</editor-parameter>
+        </designer-extension>
+      </property-extension>
+    </property>
+    <property>
+      <property-name>sortable</property-name>
+      <property-class>string</property-class>
+      <display-name>Sortable</display-name>
+      <property-extension>
+        <designer-extension>
+          <editor>com.ibm.workplace.designer.property.editors.comboParameterEditor</editor>
+          <default-value>true</default-value>
+          <editor-parameter>true&#xd;
+false</editor-parameter>
+        </designer-extension>
+      </property-extension>
+    </property>
+    <property>
+      <property-name>refreshbutton</property-name>
+      <property-class>string</property-class>
+      <property-extension>
+        <designer-extension>
+          <editor>com.ibm.workplace.designer.property.editors.comboParameterEditor</editor>
+          <editor-parameter>true&#xd;
+false</editor-parameter>
+          <default-value>false</default-value>
+        </designer-extension>
+      </property-extension>
+    </property>
+    <property>
+      <property-name>color</property-name>
+      <property-class>string</property-class>
+      <property-extension>
+        <designer-extension>
+          <editor>com.ibm.workplace.designer.property.editors.comboParameterEditor</editor>
+          <editor-parameter>Green Grass&#xd;
+Dark Green&#xd;
+Light Green&#xd;
+Purple&#xd;
+Magenta&#xd;
+Pink&#xd;
+Fade Pink&#xd;
+Light Blue&#xd;
+Teal&#xd;
+Ocean Blue&#xd;
+Night Sky&#xd;
+Night&#xd;
+Day Light&#xd;
+Orange&#xd;
+Dark Orange&#xd;
+Red Rose&#xd;
+Light Red&#xd;
+Purity&#xd;
+</editor-parameter>
+          <default-value>Night Sky</default-value>
+        </designer-extension>
+      </property-extension>
+    </property>
   </composite-component>
 </faces-config>

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core">
-  <script src="sa/js/amd_disable.js" clientSide="true"></script>
-  <script src="sa/js/libs/jquery-ui-1.10.3.min.js" clientSide="true"></script>
-  <script src="sa/js/app.config.seed.js" clientSide="true"></script>
-  <script src="sa/js/bootstrap/bootstrap.min.js" clientSide="true"></script>
-  <script src="sa/js/app.seed.js" clientSide="true"></script>
-  <script src="sa/js/jarvis.widget.min.js" clientSide="true"></script>
-  <script src="sa/js/amd_enable.js" clientSide="true"></script>
+  <script src="sa/js/amd_disable.js" ></script>
+  <script src="sa/js/libs/jquery-ui-1.10.3.min.js" ></script>
+  <script src="sa/js/app.config.seed.js" ></script>
+  <script src="sa/js/bootstrap/bootstrap.min.js" ></script>
+  <script src="sa/js/jarvis.widget.min.js" ></script>
+  <script src="sa/js/toastr.min.js" ></script>
+  <script src="sa/js/app.seed.js" ></script>
+  <script src="sa/js/amd_enable.js"></script>
 </xp:view>

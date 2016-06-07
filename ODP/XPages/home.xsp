@@ -4,30 +4,149 @@
   <xc:ccLeftPanel></xc:ccLeftPanel>
   <xc:ccCustomizePanel></xc:ccCustomizePanel>
   <div id="main">
-    <div id="content">
+    <div id="content" class="clearfix">
       <section id="widget-grid">
         <xc:ccBsRow gutter="Small">
-          <xc:ccBsCol textCenter="false" centerBlock="false">
-            <xc:this.width>
-              <xc:width xs="0" sm="0" md="6" lg="0" xl="0"></xc:width>
-            </xc:this.width>
-            <xc:this.offset>
-              <xc:offset xs="0" sm="0" md="0" lg="0" xl="0"></xc:offset>
-            </xc:this.offset>
-            <xc:ccWidget></xc:ccWidget>
+          
+            <xc:ccBsCol textCenter="false" centerBlock="false">
+              <xc:this.width>
+                <xc:width xs="0" sm="0" md="6" lg="0" xl="0"></xc:width>
+              </xc:this.width>
+              <xc:this.offset>
+                <xc:offset xs="0" sm="0" md="0" lg="0" xl="0"></xc:offset>
+              </xc:this.offset>
+              <xc:ccWidget editbutton="false" colorbutton="true" togglebutton="true" deletebutton="false" fullscreenbutton="true"
+                custombutton="false" collapsed="false" sortable="true" title="Chat" refreshbutton="false" color="Night Sky"
+              >
+                <xp:image url="/chat.PNG" id="image1" styleClass="img-responsive"></xp:image>
+              </xc:ccWidget>
+            </xc:ccBsCol>
+            <xc:ccBsCol textCenter="false" centerBlock="false">
+              <xc:this.width>
+                <xc:width xs="0" sm="0" md="6" lg="0" xl="0"></xc:width>
+              </xc:this.width>
+              <xc:this.offset>
+                <xc:offset xs="0" sm="0" md="0" lg="0" xl="0"></xc:offset>
+              </xc:this.offset>
+              <xc:ccWidget editbutton="false" colorbutton="true" togglebutton="true" deletebutton="false" custombutton="false" collapsed="false"
+              sortable="true" title="To Do" refreshbutton="false" fullscreenbutton="true" color="Teal"
+            >
+            <xp:image url="/todo.PNG" id="image4" styleClass="img-responsive"></xp:image></xc:ccWidget>
+            </xc:ccBsCol>
+            </xc:ccBsRow>
+            <xc:ccBsRow gutter="Small">
+            <xc:ccBsCol textCenter="false" centerBlock="false">
+              <xc:this.width>
+                <xc:width xs="0" sm="0" md="6" lg="0" xl="0"></xc:width>
+              </xc:this.width>
+              <xc:this.offset>
+                <xc:offset xs="0" sm="0" md="0" lg="0" xl="0"></xc:offset>
+              </xc:this.offset>
+            
+            <xc:ccWidget editbutton="false" colorbutton="true" togglebutton="true" deletebutton="false" fullscreenbutton="true" custombutton="false"
+              collapsed="false" title="Calendar" sortable="true" refreshbutton="false" color="Dark Green"
+            >
+              
+              <xp:image url="/calendar.PNG" id="image3" styleClass="img-responsive"></xp:image>
+            </xc:ccWidget>
           </xc:ccBsCol>
-          <xc:ccBsCol textCenter="false" centerBlock="false">
-            <xc:this.width>
-              <xc:width xs="0" sm="0" md="6" lg="0" xl="0"></xc:width>
-            </xc:this.width>
-            <xc:this.offset>
-              <xc:offset xs="0" sm="0" md="0" lg="0" xl="0"></xc:offset>
-            </xc:this.offset>
-            <xc:ccWidget></xc:ccWidget>
-          </xc:ccBsCol>
-        </xc:ccBsRow>
+            <xc:ccBsCol textCenter="false" centerBlock="false">
+              <xc:this.offset>
+                <xc:offset xs="0" sm="0" md="0" lg="0" xl="0"></xc:offset>
+              </xc:this.offset>
+              <xc:this.width>
+                <xc:width xs="0" sm="0" md="6" lg="0" xl="0"></xc:width>
+              </xc:this.width><xc:ccWidget editbutton="false" colorbutton="true" togglebutton="true" deletebutton="false" fullscreenbutton="true"
+                custombutton="false" collapsed="false" sortable="true" title="Map" refreshbutton="false" color="Red Rose"
+              >
+                <xp:image url="/map.PNG" id="image2" styleClass="img-responsive"></xp:image>
+              </xc:ccWidget></xc:ccBsCol>
+            
+          </xc:ccBsRow>
+         
+         
       </section>
     </div><!-- content -->
   </div><!-- sa-main -->
   <xc:ccJavaScripts></xc:ccJavaScripts>
+  <xp:scriptBlock id="scriptBlock2">
+    <xp:this.value><![CDATA[$('#widget-grid').jarvisWidgets( {
+
+	grid : 'article',
+	widgets : '.jarviswidget',
+	localStorage : localStorageJarvisWidgets,
+	deleteSettingsKey : '#deletesettingskey-options',
+	settingsKeyLabel : 'Reset settings?',
+	deletePositionKey : '#deletepositionkey-options',
+	positionKeyLabel : 'Reset position?',
+	sortable : sortableJarvisWidgets,
+	buttonsHidden : false,
+	// toggle button
+	toggleButton : true,
+	toggleClass : 'fa fa-caret-down | fa fa-caret-left',
+	toggleSpeed : 200,
+	onToggle : function() {
+	},
+	// delete btn
+	deleteButton : false,
+	deleteMsg : 'Warning: This action cannot be undone!',
+	deleteClass : 'fa fa-times',
+	deleteSpeed : 200,
+	onDelete : function() {
+	},
+	// edit btn
+	editButton : true,
+	editPlaceholder : '.jarviswidget-editbox',
+	editClass : 'fa fa-pencil | fa fa-save',
+	editSpeed : 200,
+	onEdit : function() {
+	},
+	// color button
+	colorButton : true,
+	// full screen
+	fullscreenButton : true,
+	fullscreenClass : 'fa fa-expand | fa fa-compress',
+	fullscreenDiff : 3,
+	onFullscreen : function() {
+	},
+	// custom btn
+	customButton : false,
+	customClass : 'folder-10 | next-10',
+	customStart : function() {
+		alert('Hello you, this is a custom button...');
+	},
+	customEnd : function() {
+		alert('bye, till next time...');
+	},
+	// order
+	buttonOrder : '%custom% %edit% %toggle% %fullscreen% %delete%',
+	opacity : 1.0,
+	dragHandle : '> header',
+	placeholderClass : 'jarviswidget-placeholder',
+	indicator : true,
+	indicatorTime : 600,
+	ajax : true,
+	timestampPlaceholder : '.jarviswidget-timestamp',
+	timestampFormat : 'Last update: %m%/%d%/%y% %h%:%i%:%s%',
+	refreshButton : false,
+	refreshButtonClass : 'fa ',
+	labelError : 'Sorry but there was a error:',
+	labelUpdated : 'Last Update:',
+	labelRefresh : 'Refresh',
+	labelDelete : 'Delete widget:',
+	afterLoad : function() {
+	},
+	rtl : false, // best not to toggle this!
+	onChange : function() {
+
+	},
+	onSave : function() {
+
+	},
+	ajaxnav : $.navAsAjax
+// declears how the localstorage should be saved (HTML or AJAX Version)
+
+		});
+]]></xp:this.value>
+  </xp:scriptBlock>
 </xp:view>
