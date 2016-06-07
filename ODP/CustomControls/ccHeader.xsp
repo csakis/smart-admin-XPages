@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
+  <xp:panel id="header" styleClass="sa-header" tagName="header">
+    <xp:div id="logo-group" styleClass="sa-logo-group">
+      <xp:span id="logo" styleClass="sa-logo">
+        <xp:image url="sa/img/logo.png" id="image1" alt="Smart admin"></xp:image>
+      </xp:span>
+      <xp:span id="activity" styleClass="activity-dropdown sa-activity">
+        <xp:panel tagName="i" styleClass="fa fa-user"></xp:panel>
+        <xp:panel tagName="b" styleClass="badge">10</xp:panel>
+      </xp:span>
+      <xc:ccAjaxDropdown></xc:ccAjaxDropdown>
+    </xp:div><!--  logo-group -->
+    <xp:div styleClass="pull-right">
+      <xp:div id="hide-menu" styleClass="btn-header pull-right sa-hide-menu">
+      <xp:span>
+       <xp:link escape="true" text="" title="Collapse Menu">
+         <xp:this.attrs>
+           <xp:attr name="data-action" value="toggleMenu"></xp:attr>
+         </xp:this.attrs>
+         <xp:panel tagName="i" styleClass="fa fa-reorder"></xp:panel>
+       </xp:link>
+      </xp:span>       
+      </xp:div><!-- hide-menu -->
+      <xp:div id="fullscreen" styleClass="btn-header transparent pull-right sa-fullscreen">
+        <xp:span>
+        <xp:link escape="true" text="" title="Full Screen">
+          <xp:this.attrs>
+            <xp:attr name="data-action" value="launchFullscreen"></xp:attr>
+          </xp:this.attrs>
+
+          <xp:panel tagName="i" styleClass="fa fa-arrows-alt"></xp:panel>
+        </xp:link>
+
+        </xp:span>
+       
+        <xp:span>
+        </xp:span>
+      </xp:div><!-- full screen -->
+
+    </xp:div><!-- pull-right -->
+  </xp:panel><!-- header -->
+
+  <xp:scriptBlock id="scriptBlock1">
+    <xp:this.value><![CDATA[// ACTIVITY
+// ajax drop
+x$("#{id:activity}").click(
+    function(e) {
+      var $this = $(this);
+
+      if ($this.find('.badge').hasClass('bg-color-red')) {
+        $this.find('.badge').removeClassPrefix('bg-color-');
+        $this.find('.badge').text("0");
+      }
+
+      if (!$this.next('.ajax-dropdown').is(':visible')) {
+        $this.next('.ajax-dropdown').fadeIn(150);
+        $this.addClass('active');
+      } else {
+        $this.next('.ajax-dropdown').fadeOut(150);
+        $this.removeClass('active');
+      }
+
+      var theUrlVal = $this.next('.ajax-dropdown').find(
+          '.btn-group > .active > input').attr('data-url');
+
+      // clear memory reference
+      $this = null;
+      theUrlVal = null;
+
+      e.preventDefault();
+    });
+
+$('input[data-id="activity"]').change( function() {
+  var $this = $(this);
+
+  url = $this.attr('data-url');
+  container = $('.ajax-notifications');
+
+  loadURL(url, container);
+
+  // clear memory reference
+    $this = null;
+  });
+
+// close dropdown if mouse is not inside the area of .ajax-dropdown
+$(document).mouseup(
+    function(e) {
+      if (!$('.ajax-dropdown').is(e.target)
+          && $('.ajax-dropdown').has(e.target).length === 0) {
+        $('.ajax-dropdown').fadeOut(150);
+        $('.ajax-dropdown').prev().removeClass("active");
+      }
+    });
+
+// loading animation (demo purpose only)
+$('button[data-btn-loading]').on('click', function() {
+  var btn = $(this);
+  btn.button('loading');
+  setTimeout( function() {
+    btn.button('reset');
+  }, 3000);
+});
+
+// NOTIFICATION IS PRESENT
+// Change color of lable once notification button is clicked
+$this = x$("#{id:activity}").find('.badge');
+
+if (parseInt($this.text()) > 0) {
+  $this.addClass("bg-color-red bounceIn animated");
+
+  // clear memory reference
+  $this = null;
+}]]></xp:this.value>
+  </xp:scriptBlock>
+</xp:view>

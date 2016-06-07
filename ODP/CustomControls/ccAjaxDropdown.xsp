@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+
+  <xp:div styleClass="ajax-dropdown">
+    <xp:div styleClass="btn-group btn-group-justified">
+      <xp:this.attrs>
+        <xp:attr name="data-toggle" value="buttons"></xp:attr>
+      </xp:this.attrs>
+
+
+      <xp:label value="Msgs" styleClass="btn btn-default">
+        <xp:radio>
+          <xp:this.attrs>
+            <xp:attr name="data-id" value="activity"></xp:attr>
+            <xp:attr name="data-url" value="notifications.xsp"></xp:attr>
+          </xp:this.attrs>
+        </xp:radio>
+      </xp:label>
+      <xp:label value="Files" styleClass="btn btn-default">
+        <xp:radio ></xp:radio>
+      </xp:label>
+    </xp:div>
+  </xp:div>
+
+
+
+
+</xp:view>

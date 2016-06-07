@@ -1,0 +1,15 @@
+<theme extends="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="platform:/plugin/com.ibm.designer.domino.stylekits/schema/stylekit.xsd">
+  <resources>
+    <styleSheet href="sa/css/bootstrap.css" />
+    <styleSheet href="sa/css/font-awesome.min.css" />
+    <styleSheet href="sa/css/smartadmin-production.css" />
+    <styleSheet href="sa/css/smartadmin-skins.css" />
+    <styleSheet href="sa/css/demo.min.css" />
+    <styleSheet href="sa/css/open-sans.css" />
+    <styleSheet href="sa/css/colors.min.css" />
+    
+    <script src="sa/js/libs/jquery-2.1.1.min.js" clientSide="true"></script>
+    <script src="sa/js/x$.js" clientSide="true"></script>
+  </resources>
+
+</theme>

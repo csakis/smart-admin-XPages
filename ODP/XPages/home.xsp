@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom" createForm="false">
+  <xc:ccHeader></xc:ccHeader>
+  <xc:ccLeftPanel></xc:ccLeftPanel>
+  <xc:ccCustomizePanel></xc:ccCustomizePanel>
+  <xc:ccJavaScripts></xc:ccJavaScripts>
+</xp:view>

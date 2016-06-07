@@ -1,0 +1,15 @@
+<theme extends="basic" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="platform:/plugin/com.ibm.designer.domino.stylekits/schema/stylekit.xsd">
+  <resources>
+       
+<!-- disable AMD -->
+   <script src="sa/js/amd_disable.js" clientSide="true"></script>
+   <script src="sa/js/app.config.seed.js" clientSide="true"></script>
+    <script src="sa/js/bootstrap/bootstrap.min.js" clientSide="true"></script>
+    <script src="sa/js/app.seed.js" clientSide="true"></script>
+      <script src="sa/js/bootstrap/bootstrap.min.js" clientSide="true"></script>
+<!-- enable AMD -->
+    <script src="sa/js/amd_enable.js" clientSide="true"></script>    
+    
+  </resources>
+      
+</theme>

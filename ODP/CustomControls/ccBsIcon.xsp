@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+
+
+	<xp:text escape="true" id="idTextFAIcon" tagName="i">
+	  <xp:this.styleClass><![CDATA[${javascript:var sIconClass:String = 'fa';
+sIconClass += ' fa-' + compositeData.iconName;
+     
+//Check if size was selected. If so, add size class
+    if(compositeData.iconSize != '' && compositeData.iconSize != null){
+        sIconClass += ' ' + compositeData.iconSize;
+    }
+     
+//Check if spinning was selected. If so, add fa-spin
+    if(compositeData.iconSpinning){
+        sIconClass += ' fa-spin';
+    }
+ 
+//Check if iconFixedWidth was selected. If so, add fa-fw
+    if(compositeData.iconFixedWidth){
+        sIconClass += ' fa-fw';
+    }
+ 
+//Check if helper classes have been selected
+    //Alignment
+    if(compositeData.helperClassAlignment != 'none'){
+        sIconClass += ' ' + compositeData.helperClassAlignment;
+    }
+     
+    //Color
+    if(compositeData.helperClassColor != 'none'){
+        sIconClass += ' ' + compositeData.helperClassColor;
+    }
+    //Extra classes
+    if(compositeData.extraClass != ' '){
+        sIconClass += ' ' + compositeData.extraClass;
+    }
+     
+    return sIconClass}]]></xp:this.styleClass>
+	</xp:text>
+</xp:view>
