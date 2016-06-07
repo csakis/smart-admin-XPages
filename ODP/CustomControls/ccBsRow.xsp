@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xp:view
 	xmlns:xp="http://www.ibm.com/xsp/core"
-	styleClass="row">
+	>
 	<xp:div>
 		<xp:this.styleClass><![CDATA[#{javascript:var rowStyle = "row ";
 rowStyle += (compositeData.gutter === "Medium") ? "gutter-20" : "";

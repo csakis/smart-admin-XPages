@@ -3,5 +3,31 @@
   <xc:ccHeader></xc:ccHeader>
   <xc:ccLeftPanel></xc:ccLeftPanel>
   <xc:ccCustomizePanel></xc:ccCustomizePanel>
+  <div id="main">
+    <div id="content">
+      <section id="widget-grid">
+        <xc:ccBsRow gutter="Small">
+          <xc:ccBsCol textCenter="false" centerBlock="false">
+            <xc:this.width>
+              <xc:width xs="0" sm="0" md="6" lg="0" xl="0"></xc:width>
+            </xc:this.width>
+            <xc:this.offset>
+              <xc:offset xs="0" sm="0" md="0" lg="0" xl="0"></xc:offset>
+            </xc:this.offset>
+            <xc:ccWidget></xc:ccWidget>
+          </xc:ccBsCol>
+          <xc:ccBsCol textCenter="false" centerBlock="false">
+            <xc:this.width>
+              <xc:width xs="0" sm="0" md="6" lg="0" xl="0"></xc:width>
+            </xc:this.width>
+            <xc:this.offset>
+              <xc:offset xs="0" sm="0" md="0" lg="0" xl="0"></xc:offset>
+            </xc:this.offset>
+            <xc:ccWidget></xc:ccWidget>
+          </xc:ccBsCol>
+        </xc:ccBsRow>
+      </section>
+    </div><!-- content -->
+  </div><!-- sa-main -->
   <xc:ccJavaScripts></xc:ccJavaScripts>
 </xp:view>

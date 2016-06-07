@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
-  <xp:panel id="header" styleClass="sa-header" tagName="header">
+  <header id="header" >
     <xp:div id="logo-group" styleClass="sa-logo-group">
       <xp:span id="logo" styleClass="sa-logo">
         <xp:image url="sa/img/logo.png" id="image1" alt="Smart admin"></xp:image>
@@ -39,7 +39,7 @@
       </xp:div><!-- full screen -->
 
     </xp:div><!-- pull-right -->
-  </xp:panel><!-- header -->
+  </header><!-- header -->
 
   <xp:scriptBlock id="scriptBlock1">
     <xp:this.value><![CDATA[// ACTIVITY

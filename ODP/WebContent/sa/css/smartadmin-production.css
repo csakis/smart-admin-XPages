@@ -2226,7 +2226,7 @@
     border: none
 }
 
-#extr-page .sa-header {
+#extr-page #header {
     margin: 0;
     height: 71px;
     border-bottom: 1px solid #eee!important;
@@ -2241,12 +2241,12 @@
     padding-top: 20px
 }
 
-#extr-page .sa-header .sa-logo {
+#extr-page #header .sa-logo {
     margin-top: 22px;
     margin-left: 0
 }
 
-#extr-page .sa-header .sa-logo img {
+#extr-page #header .sa-logo img {
     width: 137px
 }
 
@@ -2321,19 +2321,19 @@
 }
 
 @media (min-width:768px) and (max-width:880px) {
-    #extr-page .sa-header {
+    #extr-page #header {
         padding: 0 5px!important
     }
 }
 
 @media only screen and (min-width:0) and (max-width:679px) {
-    #extr-page .sa-header {
+    #extr-page #header {
         padding: 0 5px!important
     }
-    #extr-page .sa-header .sa-logo img {
+    #extr-page #header .sa-logo img {
         width: 135px
     }
-    #extr-page .sa-header .sa-logo {
+    #extr-page #header .sa-logo {
         margin-top: 22px
     }
 }
@@ -2577,7 +2577,7 @@ aside {
     min-height: 100%
 }
 
-.sa-header {
+#header {
     display: block;
     height: 49px;
     margin: 0;
@@ -2593,18 +2593,18 @@ aside {
     z-index: 905
 }
 
-.sa-header>div {
+#header>div {
     display: inline-block;
     vertical-align: middle;
     height: 49px;
     float: left
 }
 
-.sa-header>div.open {
+#header>div.open {
     font-weight: 700
 }
 
-.fixed-header .sa-header {
+.fixed-header #header {
     position: fixed;
     width: 100%;
     z-index: 905;
@@ -2614,16 +2614,16 @@ aside {
     box-shadow: -11px 12px 23px rgba(0, 0, 0, .1)
 }
 
-.fixed-header.fixed-ribbon .sa-header {
+.fixed-header.fixed-ribbon #header {
     border-bottom: none;
     box-shadow: none
 }
 
-.container.fixed-header .sa-header {
+.container.fixed-header #header {
     max-width: 1164px
 }
 
-.fixed-header .sa-header .ajax-dropdown {
+.fixed-header #header .ajax-dropdown {
     z-index: 906
 }
 
@@ -2822,12 +2822,12 @@ aside {
     text-decoration: none!important
 }
 
-.sa-header>:first-child,
+#header>:first-child,
 aside {
     width: 220px
 }
 
-.sa-left-panel {
+#left-panel {
     position: absolute;
     top: 0;
     left: 0;
@@ -2894,7 +2894,7 @@ aside {
     left: 10px
 }
 
-.fixed-navigation .sa-left-panel {
+.fixed-navigation #left-panel {
     height: 100%;
     position: fixed
 }
@@ -4416,7 +4416,7 @@ img.away {
     border-bottom: 1px solid #181818
 }
 
-.minified .sa-left-panel {
+.minified #left-panel {
     width: 45px
 }
 
@@ -4424,7 +4424,7 @@ img.away {
     margin-left: 45px
 }
 
-.minified .sa-left-panel,
+.minified #left-panel,
 .minified nav>ul>li {
     overflow: visible
 }
@@ -4909,7 +4909,7 @@ img.away {
     border-color: #3a7775
 }
 
-.sa-left-panel {
+#left-panel {
     -webkit-transition: 250ms cubic-bezier(0.1, .57, .1, 1);
     transition: 250ms cubic-bezier(0.1, .57, .1, 1);
     -webkit-transform: translate(0px, 0) translateZ(0px)
@@ -5041,7 +5041,7 @@ img.away {
     content: "°F"
 }
 
-.hidden-menu .sa-left-panel {
+.hidden-menu #left-panel {
     left: -210px;
     z-index: 903
 }
@@ -5050,7 +5050,7 @@ img.away {
     margin-left: 10px
 }
 
-.hidden-menu .sa-left-panel:hover {
+.hidden-menu #left-panel:hover {
     left: 0
 }
 
@@ -7050,10 +7050,10 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
     #main {
         margin-left: 0
     }
-    .sa-left-panel {
+    #left-panel {
         left: -220px
     }
-    .minified .sa-left-panel {
+    .minified #left-panel {
         left: 0
     }
     .sa-hide-menu>:first-child>a {
@@ -7074,7 +7074,7 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
     .sa-hide-menu i::before {
         content: "\f0c9"
     }
-    .hidden-menu .sa-left-panel {
+    .hidden-menu #left-panel {
         left: 0
     }
     .hidden-menu #main {
@@ -7104,7 +7104,7 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
         margin-left: 0;
         overflow-x: hidden
     }
-    .sa-left-panel {
+    #left-panel {
         left: -220px
     }
     .no-content-padding {
@@ -7113,7 +7113,7 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
     .inbox-nav-bar.no-content-padding {
         margin-top: -10px!important
     }
-    .minified .sa-left-panel {
+    .minified #left-panel {
         left: 0
     }
     .sa-hide-menu>:first-child>a,
@@ -7149,7 +7149,7 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
     .sa-hide-menu i::before {
         content: "\f0c9"
     }
-    .hidden-menu .sa-left-panel {
+    .hidden-menu #left-panel {
         left: 0
     }
     .hidden-menu #main {
@@ -7182,7 +7182,7 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
         margin-left: 0;
         overflow-x: hidden
     }
-    .sa-left-panel {
+    #left-panel {
         left: -220px
     }
     .show-stat-microcharts>div {
@@ -7198,7 +7198,7 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
         padding-left: 5px;
         padding-right: 5px
     }
-    .sa-header {
+    #header {
         padding-right: 5px
     }
     .sa-logo {
@@ -7210,7 +7210,7 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
     .inbox-nav-bar.no-content-padding {
         margin-top: -10px!important
     }
-    .minified .sa-left-panel {
+    .minified #left-panel {
         left: 0
     }
     .btn-header.transparent a {
@@ -7249,7 +7249,7 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
     .sa-hide-menu i::before {
         content: "\f0c9"
     }
-    .hidden-menu .sa-left-panel {
+    .hidden-menu #left-panel {
         left: 0
     }
     .hidden-menu #main {
@@ -7320,7 +7320,7 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
         margin-left: 0;
         overflow-x: hidden
     }
-    .sa-left-panel {
+    #left-panel {
         left: -220px
     }
     .show-stat-microcharts>div {
@@ -7336,7 +7336,7 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
         padding-left: 5px;
         padding-right: 5px
     }
-    .sa-header {
+    #header {
         padding-right: 5px
     }
     .sa-logo {
@@ -7348,10 +7348,10 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
     .inbox-nav-bar.no-content-padding {
         margin-top: -10px!important
     }
-    .minified .sa-left-panel {
+    .minified #left-panel {
         left: 0
     }
-    .sa-header {
+    #header {
         background: #fff
     }
     #ribbon {
@@ -7403,7 +7403,7 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
     .sa-hide-menu i::before {
         content: "\f0c9"
     }
-    .hidden-menu .sa-left-panel {
+    .hidden-menu #left-panel {
         left: 0
     }
     .hidden-menu #main {
@@ -7489,7 +7489,7 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
         margin-left: 0;
         overflow-x: hidden
     }
-    .sa-left-panel {
+    #left-panel {
         left: -220px
     }
     .show-stat-microcharts>div {
@@ -7505,7 +7505,7 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
         padding-left: 5px;
         padding-right: 5px
     }
-    .sa-header {
+    #header {
         padding-right: 5px
     }
     .sa-logo {
@@ -7517,10 +7517,10 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
     .inbox-nav-bar.no-content-padding {
         margin-top: -10px!important
     }
-    .minified .sa-left-panel {
+    .minified #left-panel {
         left: 0
     }
-    .sa-header {
+    #header {
         background: #fff
     }
     #ribbon {
@@ -7587,7 +7587,7 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
     .sa-hide-menu i::before {
         content: "\f0c9"
     }
-    .hidden-menu .sa-left-panel {
+    .hidden-menu #left-panel {
         left: 0
     }
     .hidden-menu #main {
@@ -7692,7 +7692,7 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
     padding: 15px 13px 0
 }
 
-.menu-on-top.hidden-menu .sa-left-panel {
+.menu-on-top.hidden-menu #left-panel {
     left: 0
 }
 
@@ -7707,7 +7707,7 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
     display: none!important
 }
 
-.menu-on-top aside.sa-left-panel {
+.menu-on-top aside#left-panel {
     width: 100%!important;
     min-height: 0!important;
     height: auto;
@@ -7718,16 +7718,16 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
     border-top: 1px solid #333
 }
 
-.menu-on-top aside.sa-left-panel nav>ul {
+.menu-on-top aside#left-panel nav>ul {
     display: block;
     width: 100%
 }
 
-.menu-on-top aside.sa-left-panel nav>ul>li:first-child {
+.menu-on-top aside#left-panel nav>ul>li:first-child {
     margin-left: 0
 }
 
-.menu-on-top aside.sa-left-panel nav>ul>li {
+.menu-on-top aside#left-panel nav>ul>li {
     position: relative;
     height: auto!important;
     padding: 0!important;
@@ -7738,7 +7738,7 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
     overflow: visible
 }
 
-.menu-on-top aside.sa-left-panel nav>ul>li>a {
+.menu-on-top aside#left-panel nav>ul>li>a {
     display: inline-block;
     height: 68px;
     text-shadow: none!important;
@@ -7757,7 +7757,7 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
     display: none
 }
 
-.menu-on-top aside.sa-left-panel nav>ul>li>a>i {
+.menu-on-top aside#left-panel nav>ul>li>a>i {
     display: block!important;
     margin: 1px 0 4px;
     line-height: inherit;
@@ -7789,7 +7789,7 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
     font-size: 13px
 }
 
-.menu-on-top aside.sa-left-panel nav>ul>li:hover {
+.menu-on-top aside#left-panel nav>ul>li:hover {
     background: #fff;
     background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #fff), color-stop(1, #cfcfcf));
     background: -ms-linear-gradient(bottom, #fff, #cfcfcf);
@@ -7798,7 +7798,7 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#cfcfcf', endColorstr='#ffffff', GradientType=0)
 }
 
-.menu-on-top aside.sa-left-panel nav>ul>li:hover>a {
+.menu-on-top aside#left-panel nav>ul>li:hover>a {
     color: #333!important;
     border-left: 1px solid #c7c7c7;
     border-right: 1px solid #c7c7c7;
@@ -7806,16 +7806,16 @@ label:hover input[type=checkbox][disabled].checkbox:checked+span:before {
     padding-right: 8px!important
 }
 
-.menu-on-top aside.sa-left-panel nav>ul>li>ul {
+.menu-on-top aside#left-panel nav>ul>li>ul {
     position: absolute!important;
     background: #3a3633
 }
 
-.menu-on-top aside.sa-left-panel nav>ul>li:hover>ul {
+.menu-on-top aside#left-panel nav>ul>li:hover>ul {
     display: block!important
 }
 
-.menu-on-top aside.sa-left-panel nav ul li.active>a:before {
+.menu-on-top aside#left-panel nav ul li.active>a:before {
     content: ""!important
 }
 
@@ -7949,14 +7949,14 @@ body.menu-on-top.fixed-header.fixed-navigation.fixed-ribbon #ribbon {
     .menu-on-top #main {
         margin-top: 0!important
     }
-    .menu-on-top .sa-left-panel {
+    .menu-on-top #left-panel {
         left: 0;
         display: none
     }
     body.menu-on-top.fixed-header.fixed-navigation.fixed-ribbon #ribbon {
         top: 49px
     }
-    .menu-on-top.hidden-menu .sa-left-panel {
+    .menu-on-top.hidden-menu #left-panel {
         display: block
     }
     .menu-on-top.hidden-menu #main {
@@ -7965,7 +7965,7 @@ body.menu-on-top.fixed-header.fixed-navigation.fixed-ribbon #ribbon {
     .menu-on-top .sa-hide-menu {
         display: block!important
     }
-    .menu-on-top aside.sa-left-panel nav {
+    .menu-on-top aside#left-panel nav {
         height: 300px!important;
         overflow: scroll;
         overflow-x: hidden!important;
@@ -8027,10 +8027,10 @@ body.menu-on-top.fixed-header.fixed-navigation.fixed-ribbon #ribbon {
     .menu-on-top nav ul ul ul {
         border-bottom: 2px solid #333
     }
-    .menu-on-top aside.sa-left-panel nav>ul>li {
+    .menu-on-top aside#left-panel nav>ul>li {
         width: 100%
     }
-    .menu-on-top aside.sa-left-panel nav>ul>li>a {
+    .menu-on-top aside#left-panel nav>ul>li>a {
         height: auto;
         display: block;
         padding: 8px 9px!important;
@@ -8041,24 +8041,24 @@ body.menu-on-top.fixed-header.fixed-navigation.fixed-ribbon #ribbon {
         padding-top: 10px;
         padding-bottom: 10px
     }
-    .menu-on-top aside.sa-left-panel nav>ul>li>a>i {
+    .menu-on-top aside#left-panel nav>ul>li>a>i {
         display: inline!important
     }
-    .menu-on-top aside.sa-left-panel nav>ul li ul {
+    .menu-on-top aside#left-panel nav>ul li ul {
         position: relative!important;
         width: 100%;
         top: 0;
         left: 0
     }
-    .menu-on-top aside.sa-left-panel nav>ul>li:active>ul,
-    .menu-on-top aside.sa-left-panel nav>ul>li:focus>ul {
+    .menu-on-top aside#left-panel nav>ul>li:active>ul,
+    .menu-on-top aside#left-panel nav>ul>li:focus>ul {
         display: block!important
     }
 }
 
 .menu-on-top .top-menu-invisible,
 .no-menu .sa-hide-menu,
-.no-menu .sa-left-panel,
+.no-menu #left-panel,
 .no-menu .sa-logout {
     display: none!important
 }

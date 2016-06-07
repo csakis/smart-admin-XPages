@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+  <xp:div id="widget" styleClass="jarviswidget">
+    <xp:panel tagName="header">
+    My first widget
+      <xp:panel tagName="h2"> <!-- widget title -->
+      </xp:panel><!-- /widget title -->
+    </xp:panel> <!-- /header -->
+    <xp:div>
+      <xp:div styleClass="jarviswidget-editbox">
+      <xp:inputText styleClass="form-control"></xp:inputText>
+      </xp:div><!-- edit box -->
+      <xp:div styleClass="widget-body"></xp:div><!-- widget content -->
+    </xp:div>
+  </xp:div> <!-- /widget -->
+</xp:view>

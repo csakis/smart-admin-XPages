@@ -12,7 +12,7 @@
     border-right: 1px solid rgba(34, 38, 46, .4)
 }
 
-.smart-style-1 .sa-header {
+.smart-style-1 #header {
     background-image: none;
     background-color: #22262e
 }
@@ -781,7 +781,7 @@ body.smart-style-2 {
     background: #fff
 }
 
-.smart-style-2 .sa-header,
+.smart-style-2 #header,
 .smart-style-2 .page-footer,
 .smart-style-2 .superbox-show {
     background-image: none;
@@ -1085,7 +1085,7 @@ body.smart-style-3 {
     margin-top: -3px
 }
 
-.smart-style-3 .sa-header {
+.smart-style-3 #header {
     background-color: #f78c40;
     background-image: -moz-linear-gradient(top, #f78c40, #d67632);
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f78c40), to(#d67632));
@@ -1506,12 +1506,12 @@ body.smart-style-4 {
     font-weight: 700
 }
 
-.smart-style-4 .sa-header {
+.smart-style-4 #header {
     background: #fff;
     box-shadow: 0 2px 2px rgba(0, 0, 0, .05), 0 1px 0 rgba(0, 0, 0, .05)
 }
 
-.smart-style-4 .sa-header>:first-child {
+.smart-style-4 #header>:first-child {
     background: #71a06a
 }
 
@@ -1693,7 +1693,7 @@ body.smart-style-4 {
 }
 
 @media (max-width:979px) {
-    .smart-style-4 .sa-header {
+    .smart-style-4 #header {
         background: #71a06a
     }
     .smart-style-4 .sa-hide-menu>:first-child>a {
@@ -1719,7 +1719,7 @@ body.smart-style-4 {
     color: #fff
 }
 
-.smart-style-5 .sa-header,
+.smart-style-5 #header,
 .smart-style-5 .sa-logo-group span.sa-activity,
 .smart-style-5 #ribbon,
 .smart-style-5 .btn-header>:first-child>a,
@@ -1728,7 +1728,7 @@ body.smart-style-4 {
     background: none!important
 }
 
-.smart-style-5.fixed-header .sa-header {
+.smart-style-5.fixed-header #header {
     background: rgba(0, 0, 0, .7)!important
 }
 
@@ -1850,7 +1850,7 @@ body.smart-style-4 {
     text-decoration: none
 }
 
-.smart-style-5 .sa-header,
+.smart-style-5 #header,
 .smart-style-5 .login-info>span {
     border-bottom: 1px solid rgba(255, 255, 225, .15)
 }
@@ -2312,7 +2312,7 @@ body.smart-style-4 {
     background: 0 0
 }
 
-#extr-page .smart-style-5 .sa-header {
+#extr-page .smart-style-5 #header {
     background: rgba(0, 0, 0, .43)!important;
     border-color: rgba(255, 255, 225, .15)!important
 }
@@ -3693,7 +3693,7 @@ body.smart-style-6 .nav-tabs>li.active>a {
     z-index: 10
 }
 
-body.smart-style-6 .sa-header,
+body.smart-style-6 #header,
 body.smart-style-6 .dropdown-menu>.active>a,
 body.smart-style-6 .dropdown-menu>.active>a:focus,
 body.smart-style-6 .dropdown-menu>.active>a:hover,

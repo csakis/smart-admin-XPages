@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xe="http://www.ibm.com/xsp/coreex" xmlns:xc="http://www.ibm.com/xsp/custom">
-  <xp:panel tagName="aside" styleClass="sa-left-panel">
+  <aside id="left-panel">
     <xp:panel tagName="nav">
       <xp:panel tagName="ul">
         <xp:panel tagName="li">
@@ -27,5 +27,5 @@
       </xp:this.attrs>
       <xc:ccBsIcon iconFixedWidth="false" iconSpinning="false" iconName="arrow-circle-left hit"></xc:ccBsIcon>
     </xp:span>
-  </xp:panel><!--  aside -->
+  </aside><!--  aside -->
 </xp:view>
